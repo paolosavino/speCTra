@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI(
     title="speCTra",
     description="Universal AI Gateway Middleware",
-    version="0.1.0",
+    version="0.1",
 )
 
 origins = ["*"]
@@ -17,10 +17,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from app.api.api import api_router
+
+app.include_router(api_router)
+
 @app.get("/health")
 def health_check():
     return {"status": "ok", "service": "speCTra Backend"}
 
 @app.get("/")
 def root():
-    return {"message": "Welcome to speCTra Universal AI Gateway"}
+    return {"message": "Welcome to speCTra - Universal AI Gateway"}
