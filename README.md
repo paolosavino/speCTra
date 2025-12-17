@@ -3,8 +3,6 @@
 
 > Connect to OpenAI, Anthropic, Gemini, and more through a single, unified API.
 
-![Dashboard Preview](frontend/public/vite.svg) 
-
 ## 🚀 Features
 
 - **Universal API**: A Drop-in replacement for OpenAI's API. Use `client = OpenAI(base_url="http://localhost:8000/v1")` with any supported provider.
