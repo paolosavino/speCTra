@@ -1,4 +1,4 @@
-# speCTra 🌈
+# speCTra
 **Universal AI Gateway**
 
 > Connect to OpenAI, Anthropic, Gemini, and more through a single, unified API.
