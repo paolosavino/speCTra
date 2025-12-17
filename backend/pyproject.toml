@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spectra-backend"
+version = "0.1.0"
+description = "Universal AI Gateway Middleware"
+authors = [{ name = "speCTra Team", email = "info@spectra.ai" }]
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "sqlmodel",
+    "alembic",
+    "httpx",
+    "redis",
+    "pydantic-settings",
+    "python-jose[cryptography]",
+    "passlib[bcrypt]",
+    "psycopg2-binary"
+]
+requires-python = ">=3.11"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
