@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+.env
+
+# Node
+node_modules/
+dist/
+.env.local
+coverage/
+
+# Database
+*.sqlite3
+*.db
+redis-data/
+postgres-data/
+
+# OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
